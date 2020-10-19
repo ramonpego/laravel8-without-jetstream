@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('home', fn() => 'Authenticated');
+Route::get('home', fn() => 'Authenticated')->middleware('auth');
 
 
